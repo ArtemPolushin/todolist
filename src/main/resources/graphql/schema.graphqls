@@ -1,0 +1,14 @@
+scalar Long
+
+type Task {
+    title: String
+    desc: String
+}
+
+type Query {
+    findAll: [Task]
+}
+
+type Mutation {
+    createTask(title: String, desc: String): Task
+}
